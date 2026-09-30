@@ -672,3 +672,14 @@ upload_file.py
 ZZZeroUID/tools/zzz_data
 ZZZeroUID/tools/INTEND_RES_PATH
 test
+
+### local render preview (self / CI only, not committed)
+test_output/output/
+test_output/preview/
+test_output/_*.py
+test_output/*.log
+test_output/*.txt
+test_output/*.html
+test_output/*.png
+tmp_probe/
+__pycache__/

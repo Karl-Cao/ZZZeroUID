@@ -49,8 +49,8 @@ ZZZ_DATA_PATH = MAIN_PATH / "zzz_data"
 CHAR_DATA_PATH = ZZZ_DATA_PATH / "char"
 
 
-# 插件数据通用素材
-TEXT2D_PATH = Path(__file__).parent / "texture2d"
+# 插件数据通用素材（随仓库分发，不进数据目录）
+TEXT2D_PATH = Path(__file__).parents[1] / "texture2d"
 
 
 def init_dir():
@@ -61,7 +61,6 @@ def init_dir():
         RESOURCE_PATH,
         WIKI_PATH,
         GUIDE_PATH,
-        TEXT2D_PATH,
         FLOWER_GUIDE_PATH,
         SQUARE_AVATAR,
         SQUARE_BANGBOO,

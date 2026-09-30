@@ -4,6 +4,8 @@ description: >
   当用户要求"维护/开发 ZZZeroUID"、"绝区零插件怎么加命令"、"zzz绑定 UID"、
   "电量/便签/面板"、"式舆防卫战/零号空洞/危局/临界推演"、"抽卡记录"、
   "RefreshDataList ENKA/MINIGG/MYS"、"ZzzPush"、"攻略猫冬/听雨惊花"、
+  "绝区零角色介绍/音擎介绍/驱动盘介绍/邦布介绍/怪物介绍"、
+  "式舆信息/危局信息/临界信息/拟境信息"、
   "game_name=zzz"、"改 ZZZeroUID 有哪些坑"时触发此 SKILL。
   凡是改动 `gsuid_core/plugins/ZZZeroUID` 的任务都应优先读取此 SKILL。
 ---
@@ -32,13 +34,13 @@ description: >
 | 五 | 配置、订阅、启动 | [references/05-config-lifecycle.md](./references/05-config-lifecycle.md) |
 | 六 | 坑点与规范 | [references/06-pitfalls-and-conventions.md](./references/06-pitfalls-and-conventions.md) |
 | 七 | Web 控制台页（抽卡 / 角色卡片 / PIL 预览） | [references/07-web-console.md](./references/07-web-console.md) |
+| 八 | **nanoka 图鉴卡**（角色/音擎/驱动盘/邦布/怪物 + 四类 endgame） | [references/08-wiki-cards.md](./references/08-wiki-cards.md) |
 
 ## 关键概念速记
 
 - 前缀 `zzz` / `绝区零` / `ZZZ`。
 - `GsBind` **必须** `game_name="zzz"`。UID 正则 `\d{8,10}`。
 - 面板刷新：`RefreshDataList` = ENKA / MINIGG / MYS。
-- 尚无 AI 桥接；加的话优先 `to_ai` + `ai_return`。
-- 若干 wiki 触发器函数体是 `pass`。
+- `zzzerouid_wiki` 的九条图鉴命令**已接 AI**（`to_ai` + `ai_return`）；改它们要同步 `help.json`。
 - 官方评分：`zzzerouid_char_detail/official_score.py` + `docs/API与官方评分说明.md`。
 - Hub 插件页：`zzzerouid_webconsole` + `web/`，`register_plugin_page(page_id="console")`。预览走 PIL `draw_card` / `draw_char_detail_img`。

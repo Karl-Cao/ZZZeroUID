@@ -50,7 +50,7 @@
 | `zzzerouid_void` | 临界推演 |
 | `zzzerouid_gachalog` | 抽卡记录 |
 | `zzzerouid_month_info` | 绳网月报 |
-| `zzzerouid_wiki` | 攻略/图鉴（若干函数体 `pass`） |
+| `zzzerouid_wiki` | nanoka 图鉴卡（角色/音擎/驱动盘/邦布/怪物 + 四类 endgame），外加 `角色攻略` |
 | `zzzerouid_code` / `_sign` / `_ann` | 兑换码、签到、清红 |
 | `zzzerouid_config` / `_help` / `_resource` / `_start` | 配置、帮助、下载、启动 |
 | `zzzerouid_webconsole` + `web/` | Hub 插件页：全体用户抽卡 / 角色卡 + PIL 预览 |
@@ -109,7 +109,9 @@ uv run ruff format --check ZZZeroUID
 - 嵌套加载：`__nest__.py` + `__full__.py`。内层 `__init__.py` 不要手工 import 子包。
 - `get_uid` 正则 `\d{8,10}`。命令在 `ZZZIgnoreAt` 且存在 `ev.at` 时 **raise Exception**（会先 `bot.send`）。
 - 订阅：`gs_subscribe`，任务名 `[绝区零] 推送` / `体力` / `自动签到` / `自动清红`。
-- 攻略：`ZZZGuideProvide` = `猫冬` \| `听雨惊花`。wiki 里角色图鉴 / 音擎 / 驱动盘 / 武器 / 邦布 / 突破材料目前是 `pass`。
+- 攻略：`ZZZGuideProvide` = `猫冬` \| `听雨惊花`。
+- 图鉴卡：`zzzerouid_wiki` 九条命令（`角色介绍` / `音擎介绍` / `驱动盘介绍` / `邦布介绍` / `怪物介绍` / `深渊信息` / `危局信息` / `临界信息` / `拟境信息`），数据走 `utils/nanoka`、绘图走 `zzzerouid_wiki/render`（pytakumi）。速查表与坑见 `.agents/skills/zzzerouid-development/references/08-wiki-cards.md`。
+- 图鉴 ICON：属性 `texture2d/{物理,火,冰,电,风,以太,玄墨}属性.png`、特性 `texture2d/pro/`、道具 `texture2d/prop/`、技能分类 `texture2d/skill_icon/`（`.webp`，映射见 `utils/nanoka/element.py::SKILL_TYPES`）。
 - 路径：`utils/resource/RESOURCE_PATH.py`。别名：`utils/alias/char_alias.json`。
 
 ## 坑点

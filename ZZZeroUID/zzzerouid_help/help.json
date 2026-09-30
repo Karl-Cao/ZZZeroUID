@@ -113,6 +113,104 @@
       }
     ]
   },
+  "图鉴资料": {
+    "desc": "无需绑定，数据来自 nanoka wiki",
+    "data": [
+      {
+        "name": "角色介绍",
+        "desc": "角色属性面板、倍率表、影画与故事",
+        "eg": "角色介绍 猫又",
+        "need_ck": false,
+        "need_sk": false,
+        "need_admin": false
+      },
+      {
+        "name": "音擎介绍",
+        "desc": "音擎简介、精炼特效与突破材料",
+        "eg": "音擎介绍 加农转子",
+        "need_ck": false,
+        "need_sk": false,
+        "need_admin": false
+      },
+      {
+        "name": "驱动盘介绍",
+        "desc": "驱动盘套装简介与二件套四件套效果",
+        "eg": "驱动盘介绍 啄木鸟电音",
+        "need_ck": false,
+        "need_sk": false,
+        "need_admin": false
+      },
+      {
+        "name": "邦布介绍",
+        "desc": "邦布简介、面板与主动技",
+        "eg": "邦布介绍 鲨牙布",
+        "need_ck": false,
+        "need_sk": false,
+        "need_admin": false
+      },
+      {
+        "name": "怪物介绍",
+        "desc": "敌人档案与背景描述",
+        "eg": "怪物介绍 提尔锋",
+        "need_ck": false,
+        "need_sk": false,
+        "need_admin": false
+      }
+    ]
+  },
+  "高难副本": {
+    "desc": "版本阵容总表，不绑定账号；可加「上期」「下期」或日期",
+    "data": [
+      {
+        "name": "深渊信息",
+        "desc": "式舆防卫战逐条防线与房间怪物",
+        "eg": "深渊",
+        "need_ck": false,
+        "need_sk": false,
+        "need_admin": false
+      },
+      {
+        "name": "上期深渊",
+        "desc": "查询上期式舆防卫战",
+        "eg": "上期深渊",
+        "need_ck": false,
+        "need_sk": false,
+        "need_admin": false
+      },
+      {
+        "name": "危局信息",
+        "desc": "危局强袭战当期三只怪",
+        "eg": "危局信息",
+        "need_ck": false,
+        "need_sk": false,
+        "need_admin": false
+      },
+      {
+        "name": "上期危局强袭战",
+        "desc": "查询上期危局强袭战",
+        "eg": "上期危局强袭战",
+        "need_ck": false,
+        "need_sk": false,
+        "need_admin": false
+      },
+      {
+        "name": "临界信息",
+        "desc": "临界推演逐 STAGE 房间与怪物",
+        "eg": "临界信息",
+        "need_ck": false,
+        "need_sk": false,
+        "need_admin": false
+      },
+      {
+        "name": "拟境信息",
+        "desc": "拟境湮灭战首领与各难度阵容",
+        "eg": "拟境信息",
+        "need_ck": false,
+        "need_sk": false,
+        "need_admin": false
+      }
+    ]
+  },
   "抽卡记录": {
     "desc": "欧菲鉴定器",
     "data": [
