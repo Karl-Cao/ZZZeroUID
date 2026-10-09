@@ -1,3 +1,5 @@
+> **独立项目说明：本 fork 不依赖排队助手，不需要安装 `zzz-queue-obs`。** 使用本次维护改动请选择 `codex/public-bot-server` 分支；实际依赖与改动见 [维护说明](PUBLIC-BOT-FORK.md)。
+
 # ZZZeroUID
 
 <p align="center">
